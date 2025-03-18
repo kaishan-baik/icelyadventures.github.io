@@ -1,7 +1,9 @@
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import Resume from './../assets/BKS-Resume.pdf';
+
 const SocialLinks = () => {
   const links = [
     {
@@ -11,8 +13,8 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/kaishan-baik/",
-      style: "rounded-tr-md",
+      href: 'https://www.linkedin.com/in/kaishan-baik/',
+      style: 'rounded-tr-md',
     },
     {
       id: 102,
@@ -21,7 +23,7 @@ const SocialLinks = () => {
           Github <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/kaishan-baik",
+      href: 'https://github.com/kaishan-baik',
     },
     {
       id: 103,
@@ -30,7 +32,7 @@ const SocialLinks = () => {
           Email <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:baik.kaishan@gmail.com",
+      href: 'mailto:baik.kaishan@gmail.com',
     },
     {
       id: 104,
@@ -39,8 +41,8 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/BKS-Resume.pdf",
-      style: "rounded-br-md",
+      href: Resume,
+      style: 'rounded-br-md',
       download: true,
     },
   ];
@@ -52,8 +54,8 @@ const SocialLinks = () => {
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg bg-gradient-to-r from-cyan-400 to-blue-700 hover:rounded-md hover:ml-[-10px] duration-300 " +
-              " " +
+              'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg bg-gradient-to-r from-cyan-400 to-blue-700 hover:rounded-md hover:ml-[-10px] duration-300 ' +
+              ' ' +
               style
             }
           >
